@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import userLogin from '../redux/actions';
+import { userLogin } from '../redux/actions/index';
+import loginWallet from '../loginWallet.png';
 
 class Login extends React.Component {
   state= {
@@ -11,10 +12,11 @@ class Login extends React.Component {
 
   handleChange = ({ target }) => {
     const { name, value } = target;
+    // target.name
     this.setState({ [name]: value });
   }
 
-  handleClick =() => {
+  handleClick = () => {
     const { email } = this.state;
     const { history, dispatchSetLogin } = this.props;
     dispatchSetLogin(email);
@@ -28,8 +30,6 @@ class Login extends React.Component {
     const checkEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     // fonte: https://stackoverflow.com/questions/940577/javascript-regular-expression-email-validation
     const check = !checkEmail.test(email) || checkPass;
-    console.log(check);
-
     return check;
   }
 
@@ -37,28 +37,38 @@ class Login extends React.Component {
     const { email, password } = this.state;
     return (
       <form>
+        <h1>Trybe</h1>
+        <h2>Wallet</h2>
+        <br />
         <input
+          className="input-login"
           data-testid="email-input"
           type="email"
-          placeholder="alguem@alguem.com"
+          placeholder="seuemail@test.com"
           onChange={ this.handleChange }
           value={ email }
           name="email"
         />
         <input
+          className="input-login"
           data-testid="password-input"
           type="password"
+          placeholder="******"
           onChange={ this.handleChange }
           value={ password }
           name="password"
         />
         <button
+          className="login-btn"
           disabled={ this.condicaoDisabled() }
           type="button"
           onClick={ this.handleClick }
         >
           Entrar
         </button>
+        <br />
+        <br />
+        <img src={ loginWallet } alt="imagem-wallet" width="150" />
       </form>
     );
   }
