@@ -1,12 +1,12 @@
 header {
-    align-items: center;
-    background-color: rgb(223, 223, 223);
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  align-items: center;
+  background-color: rgb(223, 223, 223);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
 }
