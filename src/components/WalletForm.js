@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { walletValue } from '../redux/actions/index';
+import { fetchCurrency } from '../redux/actions/index';
 
 class WalletForm extends Component {
   state = {
@@ -9,25 +9,12 @@ class WalletForm extends Component {
   }
 
   componentDidMount() {
-    this.consultaMoedas();
-  }
-
-  consultaMoedas = async () => {
-    const getApiCurrency = await fetch('https://economia.awesomeapi.com.br/json/all');
-    const currency = await getApiCurrency.json();
     const { dispatchCurrency } = this.props;
-    // console.log(currency);
-    dispatchCurrency(currency);
-    // this.setState({ currency });
+    dispatchCurrency();
   }
 
   render() {
-    const { currency } = this.props;
-    console.log(currency);
-
-    // const { currency } = this.state;
-    // const moedas = Object.keys(currency);
-    // const moedasFilter = moedas.filter((moeda) => moeda !== 'USDT');
+    const { currencies } = this.props;
     return (
       <div className="input-info-wallet">
         <label htmlFor="valor">
@@ -57,11 +44,11 @@ class WalletForm extends Component {
             id="currency"
             name="currency"
           >
-            {/* {moedasFilter.map((moeda) => (
+            {currencies.map((moeda) => (
               <option key={ moeda }>
                 {moeda}
               </option>
-            )) } */}
+            )) }
           </select>
         </label>
         <label htmlFor="method">
@@ -95,14 +82,15 @@ class WalletForm extends Component {
   }
 }
 const mapDispatchToProps = (dispatch) => ({
-  dispatchCurrency: (state) => dispatch(walletValue(state)),
+  dispatchCurrency: () => dispatch(fetchCurrency()),
 }
 );
-const mapStateToProps = ({ wallet }) => ({ currencies: wallet.currencies });
+const mapStateToProps = (state) => ({ currencies: state.wallet.currencies });
+
 WalletForm.propTypes = {
   dispatchCurrency: PropTypes.func.isRequired,
-  currency: PropTypes.string.isRequired,
-//   currencies: PropTypes.arrayOf(PropTypes.any).isRequired,
+  // currency: PropTypes.string.isRequired,
+  currencies: PropTypes.arrayOf.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(WalletForm);

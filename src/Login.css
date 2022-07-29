@@ -33,8 +33,9 @@ h2 {
   width: 300px;
 }
 
-input:disabled {
-  background: rgb(227, 20, 20);
+button:disabled {
+  background: #09a369;
+  opacity: 0.4;
 }
 
 .login-btn {
