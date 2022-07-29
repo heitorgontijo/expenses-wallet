@@ -10,3 +10,28 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
 }
+
+input {
+  height: 25px;
+}
+
+.input-info-wallet {
+  align-items: center;
+  background-color: rgb(61, 61, 61);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: center;
+  padding: 15px;
+}
+
+.btn-despesas {
+  background-color: #09a369;
+  border: 1px solid #09a369;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 8px;
+}

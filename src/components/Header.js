@@ -4,6 +4,16 @@ import { connect } from 'react-redux';
 import trybeWallet from '../trybeWallet.png';
 
 class Header extends Component {
+  totalDespesas() {
+    const { expenses } = this.props;
+    const total = expenses.reduce((acc, curr) => (
+      acc
+      + (parseFloat(curr.value) * parseFloat(curr.exchangeRates[curr.currency].ask))
+    ), 0);
+    console.log(total);
+    return total;
+  }
+
   render() {
     const { email } = this.props;
     return (
@@ -13,17 +23,20 @@ class Header extends Component {
           {`Email:${email}`}
         </p>
         <p data-testid="total-field">
-          {`Despesas: R$ ${0}`}
+          {`Despesas: R$ ${this.totalDespesas().toFixed(2)}`}
         </p>
         <p data-testid="header-currency-field">BRL</p>
       </header>
     );
   }
 }
-const mapStateToProps = ({ user }) => ({ email: user.email });
+const mapStateToProps = ({ user, wallet }) => ({
+  email: user.email,
+  expenses: wallet.expenses });
 
 Header.propTypes = {
-  email: PropTypes.string.isRequired,
-};
+  email: PropTypes.string,
+  expenses: PropTypes.array,
+}.isRequired;
 
 export default connect(mapStateToProps)(Header);

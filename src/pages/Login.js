@@ -12,7 +12,6 @@ class Login extends React.Component {
 
   handleChange = ({ target }) => {
     const { name, value } = target;
-    // target.name
     this.setState({ [name]: value });
   }
 
@@ -75,7 +74,7 @@ class Login extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  dispatchSetLogin: (state) => dispatch(userLogin(state)),
+  dispatchSetLogin: (payload) => dispatch(userLogin(payload)),
 }
 );
 
