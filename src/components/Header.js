@@ -8,22 +8,24 @@ class Header extends Component {
     const { expenses } = this.props;
     const total = expenses.reduce((acc, curr) => (
       acc
-      + (parseFloat(curr.value) * parseFloat(curr.exchangeRates[curr.currency].ask))
+      + (Number(curr.value) * Number(curr.exchangeRates[curr.currency].ask))
     ), 0);
-    console.log(total);
     return total;
   }
 
   render() {
     const { email } = this.props;
+    const name = email.split('@');
     return (
       <header>
         <img src={ trybeWallet } alt="trybeWallet" width="200" />
+        <p>{`Usuário: ${name[0]}`}</p>
         <p data-testid="email-field">
-          {`Email:${email}`}
+          {`Email: ${email}`}
         </p>
+        <p>Suas despesas R$</p>
         <p data-testid="total-field">
-          {`Despesas: R$ ${this.totalDespesas().toFixed(2)}`}
+          {this.totalDespesas().toFixed(2)}
         </p>
         <p data-testid="header-currency-field">BRL</p>
       </header>

@@ -5,7 +5,7 @@ import { fetchCurrency, despesas } from '../redux/actions/index';
 
 class WalletForm extends Component {
   state = {
-    id: 0,
+    id: -1,
     value: '',
     description: '',
     currency: 'USD',
@@ -35,7 +35,7 @@ class WalletForm extends Component {
     const { id, value,
       currency = currencies,
       description, method, tag } = this.state;
-    const arrExpanse = [({
+    const arrExpanse = ({
       id,
       value,
       description,
@@ -43,7 +43,7 @@ class WalletForm extends Component {
       method,
       tag,
       exchangeRates,
-    })];
+    });
     const { submitState } = this.props;
     submitState(arrExpanse);
     this.setState({
@@ -156,10 +156,10 @@ const mapStateToProps = (state) => ({
   expenses: state.wallet.expenses });
 
 WalletForm.propTypes = {
-  dispatchCurrency: PropTypes.func.isRequired,
-  submitState: PropTypes.func.isRequired,
+  dispatchCurrency: PropTypes.func,
+  submitState: PropTypes.func,
+  currencies: PropTypes.array,
   // currency: PropTypes.string.isRequired,
-  currencies: PropTypes.arrayOf.isRequired,
-};
+}.isRequired;
 
 export default connect(mapStateToProps, mapDispatchToProps)(WalletForm);
