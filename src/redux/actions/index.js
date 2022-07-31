@@ -14,7 +14,7 @@ export function fetchCurrency() {
       const currencies = moedas.filter((moeda) => moeda !== 'USDT');
       dispatch(walletValue(currencies));
     } catch (error) {
-      console.error(error);
+      return (error);
     }
   };
 }

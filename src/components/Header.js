@@ -15,11 +15,11 @@ class Header extends Component {
 
   render() {
     const { email } = this.props;
-    const name = email.split('@');
+    // const name = email.split('@');
     return (
       <header>
         <img src={ trybeWallet } alt="trybeWallet" width="200" />
-        <p>{`Usuário: ${name[0]}`}</p>
+        {/* <p>{`Usuário: ${name[0]}`}</p> */}
         <p data-testid="email-field">
           {`Email: ${email}`}
         </p>

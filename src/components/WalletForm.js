@@ -57,6 +57,8 @@ class WalletForm extends Component {
 
   render() {
     const { currencies } = this.props;
+    // currencies é meu ARRAY DE MOEDAS
+    // currency é minha MOEDA SELECIONADA
     const { value,
       currency = currencies,
       description, method, tag } = this.state;

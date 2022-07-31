@@ -35,3 +35,22 @@ input {
   font-size: 15px;
   padding: 8px;
 }
+
+.section-table-wallet {
+  display: grid;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.table-head-wallet {
+  border: 1px solid gray;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.table-info-wallet {
+  grid-auto-rows: minmax(50px, auto);
+  text-align: center;
+}
+
+.table-btn-wallet {
+  justify-content: flex-end;
+}
