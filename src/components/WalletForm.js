@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchCurrency, despesas } from '../redux/actions/index';
 
+const alimentação = 'Alimentação';
 class WalletForm extends Component {
   state = {
     id: -1,
@@ -10,7 +11,7 @@ class WalletForm extends Component {
     description: '',
     currency: 'USD',
     method: 'Dinheiro',
-    tag: 'Alimentação',
+    tag: alimentação,
     exchangeRates: [],
   }
 
@@ -44,6 +45,7 @@ class WalletForm extends Component {
       tag,
       exchangeRates,
     });
+    console.log(value);
     const { submitState } = this.props;
     submitState(arrExpanse);
     this.setState({
@@ -51,7 +53,7 @@ class WalletForm extends Component {
       description: '',
       currency: 'USD',
       method: 'Dinheiro',
-      tag: '',
+      tag: alimentação,
     });
   };
 
@@ -97,9 +99,9 @@ class WalletForm extends Component {
             value={ currency }
             onChange={ this.handleChange }
           >
-            {currencies.map((moeda) => (
+            {currencies.map((moeda, index) => (
               <option
-                key={ moeda }
+                key={ index }
                 value={ moeda }
               >
                 {moeda}

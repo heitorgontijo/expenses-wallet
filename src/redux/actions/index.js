@@ -22,3 +22,9 @@ export function fetchCurrency() {
 export const WALLET_EXPENSES_VALUE = 'WALLET_EXPENSES_VALUE';
 export const despesas = (payload) => ({
   type: 'WALLET_EXPENSES_VALUE', payload });
+
+export const deleteExpense = (payload) => ({
+  type: 'DELETE_EXPENSE',
+  payload,
+});
+export const DELETE_EXPENSE = 'DELETE_EXPENSE';

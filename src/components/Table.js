@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { deleteExpense } from '../redux/actions/index';
 
 class Table extends Component {
+  delete = (id) => {
+    const { removeExpense } = this.props;
+    removeExpense(id);
+  }
+
   render() {
     const { expenses } = this.props;
     return (
@@ -24,25 +30,37 @@ class Table extends Component {
         </table>
         <table className="table-info-wallet">
           <tbody className="table-info-wallet">
-            {expenses.map((item) => {
-              const { id, description, tag, method,
-                value, currency, exchangeRates } = item;
-              const cambio = Number(exchangeRates[currency].ask);
-              const valorConvertido = Number(value) * cambio;
 
+            {expenses.map(({ id, description, tag, method,
+              value, currency, exchangeRates }) => {
+              const cambio = Number(exchangeRates[currency].ask);
+              const valorConvertido = Number(value) * (cambio);
+              console.log(typeof value);
               return (
                 <tr key={ id } className="table-info-wallet">
                   <td>{ description }</td>
                   <td>{ tag }</td>
                   <td>{ method }</td>
-                  <td>{ value }</td>
+                  <td>{ Number(value).toFixed(2) }</td>
                   <td>{ exchangeRates[currency].name }</td>
                   <td>{ cambio.toFixed(2) }</td>
                   <td>{ valorConvertido.toFixed(2) }</td>
                   <td>Real</td>
                   <td className="table-btn-wallet">
-                    <button type="button">Editar</button>
-                    <button type="button">Excluir</button>
+                    <button
+                      type="button"
+                      data-testid="edit-btn"
+                    >
+                      Editar
+
+                    </button>
+                    <button
+                      type="button"
+                      data-testid="delete-btn"
+                      onClick={ () => this.delete(id) }
+                    >
+                      Excluir
+                    </button>
                   </td>
                 </tr>
               );
@@ -57,9 +75,12 @@ class Table extends Component {
 const mapStateToProps = ({ wallet }) => ({
   expenses: wallet.expenses,
 });
+const mapDispatchToProps = (dispatch) => ({
+  removeExpense: (id) => dispatch(deleteExpense(id)),
+});
 
 Table.propTypes = {
   expenses: PropTypes.array,
 }.isRequired;
 
-export default connect(mapStateToProps)(Table);
+export default connect(mapStateToProps, mapDispatchToProps)(Table);

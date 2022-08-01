@@ -41,6 +41,14 @@ input {
   grid-auto-rows: minmax(50px, auto);
 }
 
+th {
+  width: 100px;
+}
+
+td {
+  width: 100px;
+}
+
 .table-head-wallet {
   border: 1px solid gray;
   grid-auto-rows: minmax(50px, auto);

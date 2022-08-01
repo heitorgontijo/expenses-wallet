@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-08-01T15:15:51.940Z",
+    "end": "2022-08-01T15:15:55.442Z",
+    "duration": 3502,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ecceff95-6016-4883-9a08-cc5806d64b34",
+      "title": "",
+      "fullFile": "cypress/integration/secrets/04.Startest_spec.js",
+      "file": "cypress/integration/secrets/04.Startest_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6c4dd710-e195-40cf-9a00-2c7c7a895a2a",
+          "title": "Requisito 4 Startest não avaliativo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "🌟 Startest - Desenvolva os testes automatizados do requisito 4 com relação ao componente WalletForm",
+              "fullTitle": "Requisito 4 Startest não avaliativo 🌟 Startest - Desenvolva os testes automatizados do requisito 4 com relação ao componente WalletForm",
+              "timedOut": null,
+              "duration": 1357,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const walletStartest = new _startest.default({\n  testFileName: '04.star.test.js',\n  componentPath: 'src/components/WalletForm',\n  mockName: 'WalletFormSave',\n  defaultProps: {\n    renderSubmitBtn: true,\n    shouldDispatchNewExpense: true,\n    shouldClearInputs: true,\n    shouldIncrementId: true\n  }\n});\nconst testCases = [{\n  renderSubmitBtn: false\n}, {\n  shouldDispatchNewExpense: false\n}, {\n  shouldClearInputs: false,\n  shouldIncrementId: false\n}, {\n  shouldClearInputs: false\n}, {\n  shouldIncrementId: false\n}];\nconst logCreators = {\n  shouldClearInputs: () => 'Campos do formulário não estão sendo limpos',\n  shouldIncrementId: () => 'Id da despesa não está sendo incrementado',\n  renderSubmitBtn: () => 'Botão de \"Adicionar despesa\" não foi renderizado',\n  shouldDispatchNewExpense: () => 'Despesa não foi adicionada ao estado global'\n};\nawait walletStartest.runTestCases(testCases, logCreators);",
+              "err": {
+                "message": "[Startest Error]: 🚨 Teste inicial falhou 🚨\n\nCommand failed: npm test 04.star.test.js -- --watchAll=false --json --testFailureExitCode=0 --setupFilesAfterEnv \"<rootDir>/cypress/startest/jestSetup.js\"\nNo tests found, exiting with code 1\nRun with `--passWithNoTests` to exit with code 0\nIn /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet\n  19 files checked.\n  testMatch: /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet/src/**/__tests__/**/*.{js,jsx,ts,tsx}, /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 2 matches\n  testPathIgnorePatterns: /node_modules/ - 19 matches\n  testRegex:  - 0 matches\nPattern: 04.star.test.js - 0 matches\n",
+                "estack": "[Startest Error]: 🚨 Teste inicial falhou 🚨\n\nCommand failed: npm test 04.star.test.js -- --watchAll=false --json --testFailureExitCode=0 --setupFilesAfterEnv \"<rootDir>/cypress/startest/jestSetup.js\"\nNo tests found, exiting with code 1\nRun with `--passWithNoTests` to exit with code 0\nIn /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet\n  19 files checked.\n  testMatch: /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet/src/**/__tests__/**/*.{js,jsx,ts,tsx}, /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 2 matches\n  testPathIgnorePatterns: /node_modules/ - 19 matches\n  testRegex:  - 0 matches\nPattern: 04.star.test.js - 0 matches\n\n    at Startest.showTestResult (http://localhost:34483/__cypress/tests?p=cypress/integration/secrets/04.Startest_spec.js:839:13)\n    at async Context.eval (http://localhost:34483/__cypress/tests?p=cypress/integration/secrets/04.Startest_spec.js:348:5)",
+                "diff": null
+              },
+              "uuid": "e2c554ce-9460-4f88-877e-e94de1efc5ef",
+              "parentUUID": "6c4dd710-e195-40cf-9a00-2c7c7a895a2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "🌟 Startest - Desenvolva os testes automatizados do requisito 4 com relação ao componente Header",
+              "fullTitle": "Requisito 4 Startest não avaliativo 🌟 Startest - Desenvolva os testes automatizados do requisito 4 com relação ao componente Header",
+              "timedOut": null,
+              "duration": 2040,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const headerStartest = new _startest.default({\n  testFileName: '04.star.test.js',\n  componentPath: 'src/components/Header',\n  mockName: 'Header',\n  defaultProps: {\n    totalFieldTestId: _constants.TOTAL_FIELD_TEST_ID,\n    shouldRenderTotal: true,\n    isTotalCorrect: true,\n    decimalCount: 2\n  }\n});\nconst testCases = [{\n  totalFieldTestId: ''\n}, {\n  shouldRenderTotal: false\n}, {\n  isTotalCorrect: false\n}, {\n  decimalCount: 0\n}, {\n  decimalCount: 3\n}];\nconst logCreators = {\n  shouldRenderTotal: () => 'O valor total não foi renderizado',\n  isTotalCorrect: () => 'Valor total está incorreto',\n  decimalCount: 'Número de casas decimais'\n};\nawait headerStartest.runTestCases(testCases, logCreators);",
+              "err": {
+                "message": "[Startest Error]: 🚨 Teste inicial falhou 🚨\n\nCommand failed: npm test 04.star.test.js -- --watchAll=false --json --testFailureExitCode=0 --setupFilesAfterEnv \"<rootDir>/cypress/startest/jestSetup.js\"\nNo tests found, exiting with code 1\nRun with `--passWithNoTests` to exit with code 0\nIn /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet\n  19 files checked.\n  testMatch: /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet/src/**/__tests__/**/*.{js,jsx,ts,tsx}, /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 2 matches\n  testPathIgnorePatterns: /node_modules/ - 19 matches\n  testRegex:  - 0 matches\nPattern: 04.star.test.js - 0 matches\n",
+                "estack": "[Startest Error]: 🚨 Teste inicial falhou 🚨\n\nCommand failed: npm test 04.star.test.js -- --watchAll=false --json --testFailureExitCode=0 --setupFilesAfterEnv \"<rootDir>/cypress/startest/jestSetup.js\"\nNo tests found, exiting with code 1\nRun with `--passWithNoTests` to exit with code 0\nIn /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet\n  19 files checked.\n  testMatch: /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet/src/**/__tests__/**/*.{js,jsx,ts,tsx}, /home/heitor/Trybe/projeto-trybe/sd-022-b-project-trybewallet/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 2 matches\n  testPathIgnorePatterns: /node_modules/ - 19 matches\n  testRegex:  - 0 matches\nPattern: 04.star.test.js - 0 matches\n\n    at Startest.showTestResult (http://localhost:34483/__cypress/tests?p=cypress/integration/secrets/04.Startest_spec.js:839:13)\n    at async Context.eval (http://localhost:34483/__cypress/tests?p=cypress/integration/secrets/04.Startest_spec.js:378:5)",
+                "diff": null
+              },
+              "uuid": "268f1fb9-69f7-4b17-b2e2-b6640a7574c3",
+              "parentUUID": "6c4dd710-e195-40cf-9a00-2c7c7a895a2a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e2c554ce-9460-4f88-877e-e94de1efc5ef",
+            "268f1fb9-69f7-4b17-b2e2-b6640a7574c3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3397,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
