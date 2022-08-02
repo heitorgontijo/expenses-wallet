@@ -18,13 +18,13 @@ class Table extends Component {
     removeExpense(id);
   }
 
-edit = (expenses) => {
+edit = (id) => {
   // const { expenses } = this.props;
   // const { description, tag, method,
   //   value, currency } = expenses;
   // this.setState({ id, description, tag, method, value, currency });
   const { idEdit } = this.props;
-  idEdit(expenses.id);
+  idEdit(id);
 }
 
 render() {
@@ -75,7 +75,7 @@ render() {
                     className="table-btn-edit"
                     type="button"
                     data-testid="edit-btn"
-                    onClick={ () => this.edit(expenses) }
+                    onClick={ () => this.edit(id) }
                   >
                     Editar
                   </button>

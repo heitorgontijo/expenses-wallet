@@ -60,6 +60,7 @@ class WalletForm extends Component {
   editClick= () => {
     const { expenses, idToEdit, removeExpense } = this.props;
     const expensesFind = expenses.find((item) => item.id === idToEdit);
+    console.log(expensesFind);
     const { exchangeRates } = expensesFind;
     // const saveExchange = exchangeRates;
     const { value, currency,
