@@ -28,3 +28,9 @@ export const deleteExpense = (payload) => ({
   payload,
 });
 export const DELETE_EXPENSE = 'DELETE_EXPENSE';
+
+export const actionIdEdit = (idEdit) => ({
+  type: 'EDIT_EXPENSE_ID',
+  idEdit,
+});
+export const EDIT_EXPENSE_ID = 'EDIT_EXPENSE_ID';
