@@ -1,9 +1,9 @@
 header {
   align-items: center;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(236, 240, 241);
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
 }
 
 p {
@@ -12,12 +12,14 @@ p {
 }
 
 input {
+  border-radius: 5px;
   height: 25px;
+  padding: 0.2rem;
 }
 
 .input-info-wallet {
   align-items: center;
-  background-color: rgb(61, 61, 61);
+  background-color: rgb(44, 62, 80);
   color: white;
   display: flex;
   flex-direction: row;
@@ -59,6 +61,22 @@ td {
   text-align: center;
 }
 
-.table-btn-wallet {
+.table-btn-edit {
+  background: rgb(241, 196, 15);
+  border: none;
+  border-radius: 5px;
+  color: white;
   justify-content: flex-end;
+  padding: 0.5rem;
+  width: 3rem;
+}
+
+.table-btn-delete {
+  background: red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  width: 3rem;
 }
