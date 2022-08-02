@@ -6,7 +6,6 @@ import trybeWallet from '../trybeWallet.png';
 class Header extends Component {
   totalDespesas = () => {
     const { expenses } = this.props;
-    console.log(expenses);
     const total = expenses.reduce((acc, curr) => (
       Number(curr.value) * Number(curr.exchangeRates[curr.currency].ask) + acc
     ), 0);
