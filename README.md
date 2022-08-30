@@ -22,10 +22,11 @@ Neste projeto, verificamos se você é capaz de:
 
 # <strong> Instalação </strong>
 
-Caso queira rodá-lo na sua máquina, primeiro faça o git clone, depois instale as depêndencias necessárias.
-git clone
-cd trybe-wallet
-npm install
+Para utilizar deste repositorio na sua máquina, primeiro faça o git clone, depois instale as depêndencias necessárias.
 
-Para executar o app:
+<code>git clone *CHAVE SSH*</code>
+
+<code>npm install</code>
+
+Para executar em seu navegador:
 <code>npm start</code>
