@@ -1,28 +1,30 @@
 # 💰👜 Bem-vindo ao repositório Expenses Wallet 🎒💰
 
-Projeto desenvolvido para regerenciamento administrativo d
-Neste projeto você vai desenvolver uma carteira de controle de gastos com conversor de moedas, ao utilizar essa aplicação um usuário deverá ser capaz de:
+Projeto desenvolvido para regerenciamento e controle de gastos com conversor de moedas, ao utilizar essa aplicação um usuário sera capaz de:
 
-Adicionar, remover e editar um gasto;
-Visualizar uma tabelas com seus gastos;
+Realizar um melhor controle e gestão de seus gastos mensais;
+Adicionar, remover e editar uma despesa;
+Visualizar uma tabelas com suas despesas;
 Visualizar o total de gastos convertidos para uma moeda de escolha;
 
 <details>
   <summary><strong>:memo: Habilidades</strong></summary><br />
 
-Neste projeto, verificamos se você é capaz de:
+Neste projeto, aprendi um pouco mais sobre Redux:
 
-- Criar um _store_ Redux em aplicações React
+- Criando um _store_ Redux em aplicações React
 
-- Criar _reducers_ no Redux em aplicações React
+- Criando _reducers_ no Redux em aplicações React
 
-- Criar _actions_ no Redux em aplicações React
+- Criando _actions_ no Redux em aplicações React
 
-- Criar _dispatchers_ no Redux em aplicações React
+- Criando _dispatchers_ no Redux em aplicações React
 
-- Conectar Redux aos componentes React
+- Conectando Redux aos componentes React
 
-- Criar _actions_ assíncronas na sua aplicação React que faz uso de Redux.
+- Criando _actions_ assíncronas na sua aplicação React que faz uso de Redux.
+  
+- E por fim utilizei testes para validar toda a integridade da aplicação
 </details>
 
 # <strong> Instalação </strong>
