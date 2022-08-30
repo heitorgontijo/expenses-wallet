@@ -2,10 +2,10 @@
 
 Projeto desenvolvido para gerenciamento e controle de gastos com conversor de moedas, ao utilizar essa aplicação um usuário sera capaz de:
 
-Realizar um melhor controle e gestão de seus gastos mensais;
-Adicionar, remover e editar uma despesa;
-Visualizar uma tabelas com suas despesas;
-Visualizar o total de gastos convertidos para uma moeda de escolha;
+Realizar um melhor controle e gestão de seus gastos mensais;</br>
+Adicionar, remover e editar uma despesa;</br>
+Visualizar uma tabelas com suas despesas;</br>
+Visualizar o total de gastos convertidos para uma moeda de escolha;</br>
 
 <details>
   <summary><strong>:memo: Habilidades</strong></summary><br />
