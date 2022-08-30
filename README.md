@@ -20,7 +20,7 @@ Neste projeto, verificamos se você é capaz de:
 - Criar _actions_ assíncronas na sua aplicação React que faz uso de Redux.
 </details>
 
-Instalação
+#Instalação#
 Caso queira rodá-lo na sua máquina, primeiro faça o git clone, depois instale as depêndencias necessárias.
 git clone
 cd trybe-wallet
