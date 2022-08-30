@@ -1,4 +1,4 @@
-# 🚧 README em construção 🚧
+# 💰 👝 Bem-vindo ao repositório Expenses Wallet 💰 👝
 
 <details>
   <summary><strong>:memo: Habilidades</strong></summary><br />
