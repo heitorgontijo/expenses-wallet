@@ -13,7 +13,6 @@ class WalletForm extends Component {
     method: 'Dinheiro',
     tag: alimentação,
     exchangeRates: [],
-    // btnEdit: false,
   }
 
   componentDidMount() {
@@ -162,7 +161,7 @@ class WalletForm extends Component {
           </select>
         </label>
         <button
-          className="btn-despesas"
+          className={ edit ? 'btn-despesas-click' : 'btn-despesas' }
           type="button"
           onClick={ edit ? this.editClick : this.handleClick }
         >

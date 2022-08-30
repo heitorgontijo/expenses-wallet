@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import trybeWallet from '../trybeWallet.png';
+import expenseImg from '../expense.png';
 
 class Header extends Component {
   totalDespesas = () => {
@@ -14,19 +14,19 @@ class Header extends Component {
 
   render() {
     const { email } = this.props;
-    // const name = email.split('@');
+    const name = email.split('@');
     return (
       <header>
-        <img src={ trybeWallet } alt="trybeWallet" width="200" />
-        {/* <p>{`Usuário: ${name[0]}`}</p> */}
+        <img src={ expenseImg } alt="expense" width="100" />
+        <p>
+          {`Bem-vindo(a) ${name[0]}`}
+        </p>
         <p data-testid="email-field">
           {`Email: ${email}`}
         </p>
-        <p>Suas despesas R$</p>
-        <p data-testid="total-field">
-          {this.totalDespesas().toFixed(2)}
+        <p>
+          {`Total de suas despesas: R$${this.totalDespesas().toFixed(2)}`}
         </p>
-        <p data-testid="header-currency-field">BRL</p>
       </header>
     );
   }

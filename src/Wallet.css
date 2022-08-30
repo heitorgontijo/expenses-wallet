@@ -38,6 +38,16 @@ input {
   padding: 8px;
 }
 
+.btn-despesas-click {
+  background-color: rgb(241, 196, 15);
+  border: 1px solid black;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 8px;
+}
+
 .section-table-wallet {
   display: grid;
   grid-auto-rows: minmax(50px, auto);

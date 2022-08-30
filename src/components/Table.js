@@ -4,15 +4,6 @@ import { connect } from 'react-redux';
 import { deleteExpense, actionIdEdit } from '../redux/actions/index';
 
 class Table extends Component {
-  state= {
-    // id: '',
-    // value: '',
-    // description: '',
-    // currency: 'USD',
-    // method: 'Dinheiro',
-    // tag: 'alimentação',
-  }
-
   delete = (id) => {
     const { removeExpense } = this.props;
     removeExpense(id);
