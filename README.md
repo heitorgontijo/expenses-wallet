@@ -27,6 +27,9 @@ Neste projeto, aprendi um pouco mais sobre Redux:
 - E por fim utilizei testes para validar toda a integridade da aplicação
 </details>
 
+Para mais detalhes segue link do repositorio:
+https://expenses-wallet.vercel.app/
+
 # <strong> Instalação </strong>
 
 Para utilizar deste repositorio na sua máquina, primeiro faça o git clone, depois instale as depêndencias necessárias.
