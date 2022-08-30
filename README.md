@@ -1,4 +1,4 @@
-# 💰🎒 Bem-vindo ao repositório Expenses Wallet 💰 👝
+# 💰👜 Bem-vindo ao repositório Expenses Wallet 🎒💰
 
 <details>
   <summary><strong>:memo: Habilidades</strong></summary><br />
