@@ -1,6 +1,11 @@
 # 💰👜 Bem-vindo ao repositório Expenses Wallet 🎒💰
 
 Projeto desenvolvido para regerenciamento administrativo d
+Neste projeto você vai desenvolver uma carteira de controle de gastos com conversor de moedas, ao utilizar essa aplicação um usuário deverá ser capaz de:
+
+Adicionar, remover e editar um gasto;
+Visualizar uma tabelas com seus gastos;
+Visualizar o total de gastos convertidos para uma moeda de escolha;
 
 <details>
   <summary><strong>:memo: Habilidades</strong></summary><br />
@@ -30,3 +35,7 @@ Para utilizar deste repositorio na sua máquina, primeiro faça o git clone, dep
 
 Para executar em seu navegador:
 <code>npm start</code>
+
+# <strong> Tecnologias e Ferramentas utilizadas: </strong>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
