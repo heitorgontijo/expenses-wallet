@@ -38,6 +38,7 @@ Para executar em seu navegador:
 
 # <strong> Tecnologias e Ferramentas utilizadas: </strong>
 React, Javascript, Redux, Html, Css
+</br>
 <img width="100px" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" /></br>
 
 <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></br>
