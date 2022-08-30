@@ -1,6 +1,6 @@
 # 💰👜 Bem-vindo ao repositório Expenses Wallet 🎒💰
 
-Projeto desenvolvido para regerenciamento e controle de gastos com conversor de moedas, ao utilizar essa aplicação um usuário sera capaz de:
+Projeto desenvolvido para gerenciamento e controle de gastos com conversor de moedas, ao utilizar essa aplicação um usuário sera capaz de:
 
 Realizar um melhor controle e gestão de seus gastos mensais;
 Adicionar, remover e editar uma despesa;
