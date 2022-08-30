@@ -40,11 +40,11 @@ Para executar em seu navegador:
 React
 <img width="100px" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" /></br>
 Javascript
-<img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+<img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></br>
 Redux
-<img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+<img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" /></br>
 Html
-<img width="100px" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" />
+<img width="100px" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" /></br>
 Css
-<img width="100px" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" />
+<img width="100px" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" /></br>
 
