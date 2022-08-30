@@ -28,4 +28,4 @@ cd trybe-wallet
 npm install
 
 Para executar o app:
-npm start
+<code>npm start</code>
