@@ -40,4 +40,4 @@ Para executar em seu navegador:
 
 CSS
 	React
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+<img width: 100px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
