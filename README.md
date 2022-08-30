@@ -25,6 +25,7 @@ Neste projeto, verificamos se você é capaz de:
 Para utilizar deste repositorio na sua máquina, primeiro faça o git clone, depois instale as depêndencias necessárias.
 
 <code>git clone +*CHAVE SSH*</code>
+
 <code>npm install</code>
 
 Para executar em seu navegador:
