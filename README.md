@@ -44,4 +44,5 @@ CSS
 <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
 <img width="100px" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" />
+<img width="100px" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" />
 
