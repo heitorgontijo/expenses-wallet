@@ -37,12 +37,12 @@ Para executar em seu navegador:
 <code>npm start</code>
 
 # <strong> Tecnologias e Ferramentas utilizadas: </strong>
--React, 
--Javascript,
--Rtl, 
--Redux,
--Html, 
--Css
+-React, </br>
+-Javascript,</br>
+-Rtl, </br>
+-Redux,</br>
+-Html, </br>
+-Css</br>
 </br>
 <img width="100px" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" />
 <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
