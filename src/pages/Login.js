@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { userLogin } from '../redux/actions/index';
 import loginWallet from '../loginWallet.png';
+import { userLogin } from '../redux/actions/index';
 
 class Login extends React.Component {
   state= {
