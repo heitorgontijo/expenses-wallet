@@ -38,4 +38,4 @@ Para executar em seu navegador:
 
 # <strong> Tecnologias e Ferramentas utilizadas: </strong>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+<i class="devicon-react-original-wordmark colored"></i>
