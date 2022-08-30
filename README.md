@@ -1,4 +1,4 @@
-# 💰👜 Bem-vindo ao repositório Expenses Wallet 🎒💰
+# 👜 Bem-vindo ao repositório Expenses Wallet 💰💰
 
 Projeto desenvolvido para gerenciamento e controle de gastos com conversor de moedas, ao utilizar essa aplicação um usuário sera capaz de:
 
