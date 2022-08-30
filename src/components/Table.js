@@ -19,10 +19,6 @@ class Table extends Component {
   }
 
 edit = (id) => {
-  // const { expenses } = this.props;
-  // const { description, tag, method,
-  //   value, currency } = expenses;
-  // this.setState({ id, description, tag, method, value, currency });
   const { idEdit } = this.props;
   idEdit(id);
 }

@@ -10,12 +10,6 @@ class Header extends Component {
       Number(curr.value) * Number(curr.exchangeRates[curr.currency].ask) + acc
     ), 0);
     return total;
-    // const values = expenses.map((e) => {
-    //   const arrExchange = Object.entries(e.exchangeRates);
-    //   const currencyCurrent = arrExchange.find((el) => el[0] === e.currency);
-    //   return Number(e.value) * Number(currencyCurrent[1].ask);
-    // });
-    // return values.reduce((partialSum, a) => partialSum + a, 0);
   }
 
   render() {
