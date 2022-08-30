@@ -38,4 +38,5 @@ Para executar em seu navegador:
 
 # <strong> Tecnologias e Ferramentas utilizadas: </strong>
 
-<i class="devicon-react-original-wordmark colored"></i>
+CSS
+	React
