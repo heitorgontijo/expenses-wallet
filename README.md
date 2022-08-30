@@ -42,4 +42,5 @@ CSS
 	React
 <img width="100px" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" />
 <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-   
+<img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+          
