@@ -30,7 +30,7 @@ Neste projeto, aprendi um pouco mais sobre Redux:
 Para mais detalhes segue link do repositorio:
 https://expenses-wallet.vercel.app/ </br>
 acesso liberado para Qualquer Usuario apenas seguir essas observações </br>
-*precisa digitar um email valido(@.com) e um password com >= 6 caracteres
+* *precisa digitar um email valido(@.com) e um password com >= 6 caracteres *
 
 # <strong> Instalação </strong>
 
