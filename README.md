@@ -29,6 +29,8 @@ Neste projeto, aprendi um pouco mais sobre Redux:
 
 Para mais detalhes segue link do repositorio:
 https://expenses-wallet.vercel.app/
+acesso liberado para qualquer usuario apenas seguir essas observações
+*Precisa digitar um email valido(@.com) e um password com >= 6 caracteres
 
 # <strong> Instalação </strong>
 
